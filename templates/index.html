@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+
+    <title>My Portofolio | Ahmad Abrar</title>
+    <!-- Font Google -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=PT+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Link CSS -->
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static',filename='css/styles.css')}}"
+    />
+  </head>
+  <body class="bg-dark">
+    <!-- Navbar -->
+    <nav
+      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
+      style="background-color: black"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">My Portofolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-center" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profile">Profile</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#project">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Home -->
+    <section id="home">
+      <div class="container">
+        <div class="row text-center">
+          <h1 class="fw-bold">My Portofolio</h1>
+          <p class="fst-italic">
+            "Coding is poetry written in a language only computers understand."
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Profile -->
+    <section id="profile" class="profile bg-dark navbar-dark">
+      <div class="container mt-3">
+        <div class="row text-center">
+          <h3>Profile</h3>
+        </div>
+        <div class="row flex-lg-row align-items-center justify-content-around">
+          <div class="col-lg-3">
+            <img
+              src="/static/assets/me.png"
+              width="300px"
+              alt=""
+              class="align-content-center"
+            />
+          </div>
+          <div class="col-lg-7">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Hi, i'm Ahmad Abrar</h1>
+            <p class="lead">
+              A dedicated programmer with a deep fascination for creating
+              efficient, user-friendly software. My journey in the world of
+              coding has allowed me to craft digital solutions that make
+              everyday tasks simpler and more convenient. I'm passionate about
+              turning ideas into reality through clean, elegant code and thrive
+              on the challenges that come with it. Let's build the future
+              together!.
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+              <button type="button" class="btn btn-primary btn-lg px-4 me-md-2">
+                Click me!
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Batas -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#F5F5F5"
+        fill-opacity="1"
+        d="M0,64L40,96C80,128,160,192,240,197.3C320,203,400,149,480,149.3C560,149,640,203,720,197.3C800,192,880,128,960,112C1040,96,1120,128,1200,144C1280,160,1360,160,1400,160L1440,160L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"
+      ></path>
+    </svg>
+    <!-- End Batas -->
+
+    <!-- Project -->
+    <section id="project" style="background-color: #f5f5f5">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h3 class="text-dark mb-3">Selected Project</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <img
+                src="{{ url_for('static',filename='assets/project1.jpg')}}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-dark">Project 1</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <img
+                src="{{ url_for('static',filename='assets/project1.jpg')}}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-dark">Project 2</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-3">
+            <div class="card">
+              <img
+                src="{{ url_for('static',filename='assets/project1.jpg')}}"
+                class="card-img-top"
+                alt="..."
+              />
+              <div class="card-body">
+                <p class="card-text text-dark">Project 3</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Batas 2 -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+      <path
+        fill="#f5f5f5"
+        fill-opacity="1"
+        d="M0,224L40,229.3C80,235,160,245,240,208C320,171,400,85,480,90.7C560,96,640,192,720,208C800,224,880,160,960,138.7C1040,117,1120,139,1200,170.7C1280,203,1360,245,1400,266.7L1440,288L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z"
+      ></path>
+    </svg>
+    <!-- End batas 2 -->
+
+    <!-- Contact Me -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center">
+          <div class="col">
+            <h3 class="mb-3">Contact Me</h3>
+          </div>
+        </div>
+        <div class="row justify-content-center mb-5">
+          <div class="col-md-6">
+            <div class="form-floating mb-3">
+              <input
+                type="text"
+                class="form-control"
+                id="floatingName"
+                placeholder="Name"
+              />
+              <label for="floatingPassword" class="text-secondary"
+                >Your Name</label
+              >
+            </div>
+            <div class="form-floating mb-3">
+              <input
+                type="email"
+                class="form-control"
+                id="floatingInput"
+                placeholder="name@example.com"
+              />
+              <label for="floatingInput" class="text-secondary"
+                >Email address</label
+              >
+            </div>
+
+            <div class="form-floating mb-3">
+              <textarea
+                class="form-control"
+                placeholder="Leave a comment here"
+                id="floatingTextarea2"
+                style="height: 100px"
+              ></textarea>
+              <label for="floatingTextarea2" class="text-secondary"
+                >Comments</label
+              >
+            </div>
+            <button type="button" class="btn btn-primary">Send!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center p-3" style="background-color: black">
+      <p>
+        Created with love by
+        <a href="" class="text-light fw-bold" style="text-decoration: none"
+          >Ahmad Abrar</a
+        >
+        &copy; 2023
+      </p>
+    </footer>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
